@@ -1,4 +1,4 @@
-# TTN Lorawan Gateway upgrade 
+# TTN LoRaWAN Gateway upgrade 
   
 suitable for | RaspberryPi3b+ | ch2i | IMST-iC880a-SPI |  
 
