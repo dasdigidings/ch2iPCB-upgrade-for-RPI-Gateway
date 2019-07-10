@@ -1,4 +1,4 @@
-# ttn-gw-hardware-upgrade
+# TTN Lorawan Gateway upgrade 
   
 suitable for | RaspberryPi3b+ | ch2i | IMST-iC880a-SPI |  
 
