@@ -4,7 +4,8 @@ suitable for | RaspberryPi3b+ | ch2i | IMST-iC880a-SPI |
 
 how to upgrade TTN Gateway with BME280 sensor and digital voltmeter  
 
-this will be a step by step description how to upgrade your ttn lorawan gateway with environmental sensor (BME280) and optional digital voltmeter  
+this will be a step by step description how to upgrade your ttn lorawan gateway with environmental sensor (BME280) and optional digital voltmeter
+
 **Parts needed for upgrading the gateway ch2i board with sensor and voltmeter**
 •	1x GY-BME280 3.3V precision altimeter atmospheric pressure BME280 sensor module
 •	1x Balai 0.28 Zoll 2.5V-30V LED Bildschirm Mini Digital Spannung Circuit Tester Meter Zubehör für elektronische Teile Digitaler Voltmeter
