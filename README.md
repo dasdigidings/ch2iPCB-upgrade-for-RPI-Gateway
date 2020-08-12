@@ -1,7 +1,8 @@
+
 # TTN LoRaWAN Gateway upgrade 
 *suitable for RaspberryPi3b+ with chi2-PCB and IMST-iC880a-SPI Board*
 
-(see https://github.com/ch2i/iC880A-Raspberry-PI for technical documentation of the PCB)
+(see https://github.com/ch2i/iC880A-Raspberry-PI for technical documentation and layout of the PCB)
 
 > this is a step by step description how to upgrade your ttn lorawan
 > gateway with environmental sensor (Bosch BME280) and digital voltmeter
@@ -15,7 +16,7 @@
 -	LED Voltage meter 2.5-30VDC
 -	Optional 1x 4p female connector for I2C Bus
 
-*(detailed descripton see bom.txt file with linked suppliers / shops)*
+*(detailed descripton see [bom.txt](https://github.com/jensileinchen/gateway-hardware-upgrade/blob/master/bom.txt) file with linked suppliers / shops)*
 
 ## *Preparation*
 
@@ -59,8 +60,8 @@ Therefor login to your balena account with your personal credentials, open the A
 
 Select the „Device Service Variables“  from the left side-bar. Click on the blue colored button to add new variables.  Now you have to configure following variables with values (each time just repeat the step „add new variable“):
 
-Service:	        Variable.Name:			Variable.Value: 
-collectd		GW_BME280				true
+Service: 	        Variable Name:			Variable.Value:  
+ collectd		GW_BME280				true
 collectd		GW_BME280_ADDR			0x76
 collectd		GW_BME280_SMBUS			1
 
@@ -90,8 +91,15 @@ and ENTER again to execute the integrated python command
 > Congratulations – your sensor is installed properly and reading data !
 
 To finish all the works for this upgrade check all wiring inside of your gateway again and close the box. Install the gateway on its original location and restart power connection.
-***
 
+## Credits and Thanks
+
+ - [ch2i](https://github.com/ch2i/iC880A-Raspberry-PI) for the PCB  (Raspberry PI iC880A and LinkLab Lora Gateway Shield)
+ - [Amedee Bulle](https://github.com/AmedeeBulle) for the explanations and his help with sensor integration
+ - [Caspar Armster](https://github.com/Drasek) for support during all the hours of testing 
+
+
+***
 <!--Document Version 1.2 from 06th October 2019-->
 <!--edit 12.08.2020 - some code correction and minor additions-->
-<!--release 2.02 created on 12th August 2020-->
+<!--release 2.0812.2 created on 12th August 2020-->
