@@ -84,3 +84,4 @@ To finish all the works for this upgrade check all wiring inside of your gateway
 
 <!--Document Version 1.2 from 06th October 2019-->
 <!--edit 12.08.2020 - some code correction and minor additions-->
+<!--release 2.02 created on 12th August 2020-->
