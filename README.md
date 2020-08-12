@@ -1,7 +1,4 @@
-
-
 # TTN LoRaWAN Gateway upgrade 
-
 
 Overview and steps:
 
@@ -13,10 +10,7 @@ Overview and steps:
  
 **Note:** This solution is suitable for Lorawan-Gateway based on RaspberryPi3b+ with chi2-PCB and IMST-iC880a-SPI Board, balena.cloud operated with [Draseks](https://github.com/Drasek)´ fork of this [repository](https://github.com/AmedeeBulle/ttn-gateway-containers) to use a multi-container configuration. Also see [repo](https://github.com/ch2i/iC880A-Raspberry-PI) before for technical documentation and layout of the PCB) This is a step by step description how to upgrade your ttn lorawan gateway with environmental sensor (Bosch BME280) and digital voltmeter for monitoring input voltage supply.
 
-
-
-
-## Parts needed for upgrading your existing gateway ch2i PCB with sensor and voltmeter*
+## Parts needed for upgrading your existing gateway ch2i PCB with sensor and voltmeter
 
 -	BME280 Sensor
 -	LED Voltage meter 2.5-30VDC
@@ -33,10 +27,7 @@ Overview and steps:
 -	Seperate the IMST-IC880A from the PCB --- be careful as this concentrator board is EMD sensitive (and expensive, too) – discharge yourself before touching it or use ESD equipment
 -	Remove the screws that are fixing the PCB with the RaspberryPi3 to disconnect the two boards
 
-
-
 ## Gateway upgrade (Hardware)
-
 
 After all preparation were done we can start with the upgrade steps
 
@@ -75,12 +66,7 @@ collectd		GW_BME280_SMBUS			1
 
 > Now the configuration is done and the gateway must be restarted to activate changes. Just click on the „restart“ button located in the device summary screen. Some minutes later the gateway should be restarted and active again – in the summary screen you can see that gateway and collectd are marked as „running“
 
-
-
-
 ## We can check the new sensor - working and measuring environmental data directly from balena.cloud very easy:
-
-
 
 Select your application and the device of your balena cloud. From the summary screen start a new terminal session by selecting „collectd“ as target, now start terminal session -- some seconds later you will be connected to your device shell, please type
 
@@ -105,7 +91,6 @@ To finish all the works for this upgrade check all wiring inside of your gateway
  - [ch2i](https://github.com/ch2i/iC880A-Raspberry-PI) for the PCB  (Raspberry PI iC880A and LinkLab Lora Gateway Shield)
  - [Amedee Bulle](https://github.com/AmedeeBulle) for the explanations and his help with sensor integration
  - [Caspar Armster](https://github.com/Drasek) for support during all the hours of testing 
-
 
 ***
 <!--Document Version 1.2 from 06th October 2019-->
