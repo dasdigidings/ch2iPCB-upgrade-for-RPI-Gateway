@@ -16,7 +16,7 @@ Overview and steps:
 
 
 
-## *Parts needed for upgrading your existing gateway ch2i PCB with sensor and voltmeter*
+## Parts needed for upgrading your existing gateway ch2i PCB with sensor and voltmeter*
 
 -	BME280 Sensor
 -	LED Voltage meter 2.5-30VDC
