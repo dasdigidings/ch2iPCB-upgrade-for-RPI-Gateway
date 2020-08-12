@@ -1,16 +1,13 @@
 # TTN LoRaWAN Gateway upgrade 
-  
-suitable for | RaspberryPi3b+ | ch2i | IMST-iC880a-SPI |  
+*suitable for RaspberryPi3b+ with chi2-PCB and IMST-iC880a-SPI Board*
 
 (see https://github.com/ch2i/iC880A-Raspberry-PI for technical documentation of the PCB)
 
-how to upgrade TTN Gateway with BME280 sensor and digital voltmeter  
-
-this will be a step by step description how to upgrade your ttn lorawan gateway with environmental sensor (BME280) and optional digital voltmeter
+this will be a step by step description how to upgrade your ttn lorawan gateway with environmental sensor (BME280) and optional digital voltmeter.
 
 **Parts needed for upgrading the gateway ch2i board with sensor and voltmeter**
-•	1x GY-BME280 3.3V precision altimeter atmospheric pressure BME280 sensor module
-•	1x Balai 0.28 Zoll 2.5V-30V LED Bildschirm Mini Digital Spannung Circuit Tester Meter Zubehör für elektronische Teile Digitaler Voltmeter
+•	1x GY-BME280 3.3V precision altimeter atmospheric pressure Bosch-BME280 sensor module
+•	1x Balai 0.28 Zoll 2.5V-30V LED Bildschirm Mini Digital Spannung Circuit Tester Meter
 •	Optional 1x 4p female connector for I2C Bus
 
 **Preparation**
@@ -50,33 +47,40 @@ Therefor login to your balena account with your personal credentials, open the A
 
 Select the „Device Service Variables“  from the left side-bar. Click on the blue colored button to add new variables.  Now you have to configure following variables with values (each time just repeat the step „add new variable“):
 
-Service:	Variable.Name:			Variable.Value: 
+Service:	        Variable.Name:			Variable.Value: 
 collectd		GW_BME280				true
 collectd		GW_BME280_ADDR			0x76
 collectd		GW_BME280_SMBUS			1
 
-optional (only if your gateway should send data to influx-Database or similar)
-collectd		GW_COLLECTD_SERVER	xxx.xxx.xxx.xxx
-
-(this collectd servers credentials must be configured in /ttn-gateway-containers/collectd/collectd.conf.d/network.conf  file  ---- 
-
 Now the configuration is done and the gateway must be restarted to activate changes. Just click on the „restart“ button located in the device summary screen. Some minutes later the gateway should be restarted and active again – in the summary screen you can see that gateway and collectd are marked as „running“
 
-We can test the sensor measuring environmental data directly from balena.cloud very easy:
 
-From the summary screen start a new terminal session by selecting „collectd“ as target
 
-Start terminal session
-Some seconds later you will be connecte****d to your device shell
-Type `cd collectd-python-plugins` and ENTER to change the folder
-Type `python bme280.py` and ENTER again to execute the python command
 
-`Temperature: 34.63°C` 
-`Pressure: 1008.74hPa` 
-`Humidity: 19.75%`
+## **We can check the new sensor - working and measuring environmental data directly from balena.cloud very easy:**
 
-***Congratulations – your sensor is installed properly and reading data ! 
+
+
+Select your application and the device of your balena cloud. From the summary screen start a new terminal session by selecting „collectd“ as target, now start terminal session
+>Some seconds later you will be connected to your device shell
+>Type
+> 
+`cd collectd-python-plugins`
+
+ and ENTER to change the folder ... then type 
+
+`python bme280.py` 
+
+and ENTER again to execute the integrated python command
+
+    Temperature: 34.63°C
+    Pressure: 1008.74hPa
+    Humidity: 19.75%
+
+> Congratulations – your sensor is installed properly and reading data !
+
 To finish all the works for this upgrade check all wiring inside of your gateway again and close the box. Install the gateway on its original location and restart power connection.
 ***
 
 <!--Document Version 1.2 from 06th October 2019-->
+<!--edit 12.08.2020 - some code correction and minor additions-->
