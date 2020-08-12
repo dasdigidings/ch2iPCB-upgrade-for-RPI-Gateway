@@ -1,0 +1,21 @@
+Bill of Material
+Einkaufliste
+
+Parts needed for upgrading the gateway ch2i board with sensor and voltmeter
+folgende Teile werden zur beschriebenen Erweiterung benötigt 
+
+• 1x GY-BME280 3.3V precision altimeter atmospheric pressure Bosch-BME280 sensor module 
+
+https://www.amazon.co.uk/BME280-3-3-Bosch-Altitude-Atmosphere-Pressure-Temperature/dp/B07DMJMNVD
+
+oder / alternative
+
+https://de.aliexpress.com/item/32807419891.html?spm=a2g0s.9042311.0.0.3a534c4dj8s0YR
+
+• 1x Balai 0.28 Zoll 2.5V-30V LED Bildschirm Mini Digital Spannung Circuit Tester Meter 
+
+https://www.amazon.de/Balai-0-28-inch-Electronic-Accessories-Blue/dp/B01LYERFCF
+
+• Optional 1x 4p female connector for I2C Bus
+
+https://www.amazon.de/Adafruit-4-Pin-Female-Socket-Stemma/dp/B07QKG8M6N/ref=sr_1_1?dchild=1&keywords=Adafruit+JST+PH+4-Pin+to+Female+Socket+Cable+I2C+Stemma+Cable+200+mm&qid=1597215532&s=ce-de&sr=1-1
