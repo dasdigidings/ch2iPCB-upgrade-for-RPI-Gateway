@@ -11,22 +11,20 @@
 
 ## *Parts needed for upgrading your existing gateway ch2i PCB with sensor and voltmeter*
 
-•	BME280 Sensor
-•	LED Voltage meter 2.5-30VDC
-•	Optional 1x 4p female connector for I2C Bus
+-	BME280 Sensor
+-	LED Voltage meter 2.5-30VDC
+-	Optional 1x 4p female connector for I2C Bus
 
 *(detailed descripton see bom.txt file with linked suppliers / shops)*
 
-
-
 ## *Preparation*
 
-•	Shutdown power-supply from gateway, remove power supply and antenna-connections
-•	Open your station-box (or the housing from your system)
-•	Disconnect any wiring from your device, also the pigtail antenna from the IMST-IC880A board and the LAN-Cable from the RaspberryPi3, power supply from PCB-board
-•	Remove the complete gateway-unit out of the housing
-•	Seperate the IMST-IC880A from the PCB --- be careful as this concentrator board is EMD sensitive (and expensive, too) – discharge yourself before touching it or use ESD equipment
-•	Remove the screws that are fixing the PCB with the RaspberryPi3 to disconnect the two boards
+-	Shutdown power-supply from gateway, remove power supply and antenna-connections
+-	Open your station-box (or the housing from your system)
+-	Disconnect any wiring from your device, also the pigtail antenna from the IMST-IC880A board and the LAN-Cable from the RaspberryPi3, power supply from PCB-board
+-	Remove the complete gateway-unit out of the housing
+-	Seperate the IMST-IC880A from the PCB --- be careful as this concentrator board is EMD sensitive (and expensive, too) – discharge yourself before touching it or use ESD equipment
+-	Remove the screws that are fixing the PCB with the RaspberryPi3 to disconnect the two boards
 
 
 
@@ -47,11 +45,11 @@ Within the delivery of the sensor is a 6-male connector  - we will only use 4-ma
 
 After all hardware upgrades are finished you can remount all parts together. Just reverse the description mentioned before
 
-•	Place the PCB board on top of the RapsberryPi3 – fix it with the screws as before
-•	Place the concentrator Board carefully on top of the PCB board
-•	Remount the Gateway unit inside of the housing
-•	Reconnect all wiring including antenna   (never power the device without antenna !!)
-•	Power it up again and wait some minutes until it will be online in balena.cloud
+-	Place the PCB board on top of the RapsberryPi3 – fix it with the screws as before
+-	Place the concentrator Board carefully on top of the PCB board
+-	Remount the Gateway unit inside of the housing
+-	Reconnect all wiring including antenna   (never power the device without antenna !!)
+-	Power it up again and wait some minutes until it will be online in balena.cloud
 
 ## Gateway upgrade (Software)
 
@@ -97,4 +95,3 @@ To finish all the works for this upgrade check all wiring inside of your gateway
 <!--Document Version 1.2 from 06th October 2019-->
 <!--edit 12.08.2020 - some code correction and minor additions-->
 <!--release 2.02 created on 12th August 2020-->
-
